@@ -15,7 +15,7 @@ I'm counting on an ellipse whose center has coordinates [0,0] so expressing y as
 
 I use this expression in the GetYCoordinateOnEllipse(float x) method. I ignore the absolute value because I'm only interested in the positive y-coordinate.
 
-After I get the optimal point, I check if the 2 given resulting, equal shapes really form a circle. If so, it must be true that the distance from the optimal point to any point on the quarter circle is always the same
+After I get the optimal point, I check if the 2 given resulting, equal shapes really form a circle. If so, it must be true that the distance from the optimal point to any point on the quarter circle is always the same.
 ![distances](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/61ed4b42-8ec4-4fa4-8105-4cfaa6798d75)
 
 In a similar way to the FindOptimalPoint() method, I pass points from B to O, plug their x-coordinates into GetYCoordinateOnEllipse(float x) to get the corresponding point on the ellipse, and calculate the distance from O for that point.
@@ -38,3 +38,5 @@ Percentage of the total distances calculated
 ```
 # Example of Output
 ![C__Users_macou_source_repos_EllipseToCircle_EllipseToCircle_bin_Debug_EllipseToCircle exe 14 04 2024 18_45_21](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/650384ff-3865-49ee-af84-59b2fff3648a)
+Output for a=5 and b=3 as input. 
+
