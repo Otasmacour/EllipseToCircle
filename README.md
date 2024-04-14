@@ -10,7 +10,6 @@ if you divide the ellipse into 3 parts by two parallel lines, leaving two equal 
 The two identical parts must be said to have identical or close together radius r1 and r2/distances from O (the optimally chosen point) to two points on the curves of the identical pieces cut from the ellipse. 
 In the FindOptimalPoint() method, I look for the point on one half of the ellipse O for which the difference in its distance from B and the corresponding point on the ellipse is as small as possible. So I proceed on the major semi-axis along the points from B to S, and for each point I find the difference r1 and r2, and if I find a point that is an improvement for me in the sense of a smaller difference, it becomes the new best point. The smaller the offSet of steps along the axis I choose, the more optimal point I find (the smaller the difference of r1 and r2). For an offSet of 1*10^-7 I get a point with a difference of 2.384186E-07. Which is a number close to zero.
 
-Translated with www.DeepL.com/Translator (free version)
 # Input
 ```txt
 number a, length of the semi-major axis
