@@ -46,7 +46,7 @@ namespace EllipseToCircle
         }
         public void FindIfTheEllipseCanBeCutToCircle()
         {
-            Coordinates bestPoint = FindOptimalPointAGreaterThanB();
+            Coordinates bestPoint = FindOptimalPoint();
             float x = bestPoint.x;
             float y = bestPoint.y;
             if (!ellipseLies)
@@ -106,7 +106,7 @@ namespace EllipseToCircle
             }
             return (mostFrequentDistance, distances[mostFrequentDistance]);
         }
-        Coordinates FindOptimalPointAGreaterThanB()
+        Coordinates FindOptimalPoint()
         {
             float distanceFromStoB = DistanceOfTwoPoints(S, B);
             float offSetToSetRandomBestPointSoFar = distanceFromStoB / 19; //Divided by my age
