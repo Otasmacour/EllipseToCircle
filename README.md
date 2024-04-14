@@ -1,3 +1,4 @@
 # What's the deal?
-if you divide the ellipse into 3 parts by two parallel lines, leaving two equal parts and one "filling" between them. Is it possible to make a circle out of those two equal parts?![Geometrie - GeoGebra - Google Chrome 14 04 2024 16_33_12]<img width="284" alt="283612789-fb765e5f-ae52-4bc1-b0ed-55a03aa8d58b" src="[https://github.com/Otasmacour/Maximum-matching-problem/assets/111227700/6b912c8e-a998-4186-b785-c01711f13b1a](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/0da1f232-8d00-4a6b-9965-3d96518c9326)">
+if you divide the ellipse into 3 parts by two parallel lines, leaving two equal parts and one "filling" between them. Is it possible to make a circle out of those two equal parts?
+![Geometrie - GeoGebra - Google Chrome 14 04 2024 16_33_12](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/0da1f232-8d00-4a6b-9965-3d96518c9326)
 ![Geometrie - GeoGebra - Google Chrome 14 04 2024 16_33_128](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/595a4073-cc6e-48bb-af23-8b097c2bd45a)
