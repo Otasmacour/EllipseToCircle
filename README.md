@@ -15,12 +15,26 @@ I'm counting on an ellipse whose center has coordinates [0,0] so expressing y as
 
 I use this expression in the GetYCoordinateOnEllipse(float x) method. I ignore the absolute value because I'm only interested in the positive y-coordinate.
 
-After I get the optimal/best point, I check if the 2 given resulting, equal shapes really form a circle. If so, it must be true that the distance from the optimal point to any point on the semicircle is always the same
+After I get the optimal point, I check if the 2 given resulting, equal shapes really form a circle. If so, it must be true that the distance from the optimal point to any point on the quarter circle is always the same
 ![distances](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/61ed4b42-8ec4-4fa4-8105-4cfaa6798d75)
+
 In a similar way to the FindOptimalPoint() method, I pass points from B to O, plug their x-coordinates into GetYCoordinateOnEllipse(float x) to get the corresponding point on the ellipse, and calculate the distance from O for that point.
 I evaluate the resulting distances by seeing how many are equal to each other, the result is that very few are. The shapes I have obtained by cutting the ellipse are definitely not half circles
-# Input
+# Input 
 ```txt
 number a, length of the semi-major axis
 number b, the length of the semi-minor axis
 ```
+# OutPut
+```txt
+Coordinates of the optimal point
+Distance of the optimal point to according point on ellipse
+Distance of the optimal point to point B
+The difference of that distances
+Number of calculated distances from points on quarter circle to optimal point
+Most frequant distance
+Frequancy od that distance
+Percentage of the total distances calculated
+```
+# Example of Output
+![C__Users_macou_source_repos_EllipseToCircle_EllipseToCircle_bin_Debug_EllipseToCircle exe 14 04 2024 18_45_21](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/650384ff-3865-49ee-af84-59b2fff3648a)
