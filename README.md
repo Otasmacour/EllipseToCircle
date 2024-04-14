@@ -14,6 +14,11 @@ I'm counting on an ellipse whose center has coordinates [0,0] so expressing y as
 ![20240414_180417](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/ba7821dd-06fe-4917-ad33-7053d9040a17)
 
 I use this expression in the GetYCoordinateOnEllipse(float x) method. I ignore the absolute value because I'm only interested in the positive y-coordinate.
+
+After I get the optimal/best point, I check if the 2 given resulting, equal shapes really form a circle. If so, it must be true that the distance from the optimal point to any point on the semicircle is always the same
+![distances](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/61ed4b42-8ec4-4fa4-8105-4cfaa6798d75)
+In a similar way to the FindOptimalPoint() method, I pass points from B to O, plug their x-coordinates into GetYCoordinateOnEllipse(float x) to get the corresponding point on the ellipse, and calculate the distance from O for that point.
+I evaluate the resulting distances by seeing how many are equal to each other, the result is that very few are. The shapes I have obtained by cutting the ellipse are definitely not half circles
 # Input
 ```txt
 number a, length of the semi-major axis
