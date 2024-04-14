@@ -60,13 +60,14 @@ namespace EllipseToCircle
             float BestSoFarDistanceToB2 = DistanceOfTwoPoints(bestPoint, B);
             float BestSoFarDifference2 = Difference(BestSoFarDistanceToPointOnEllipse2, BestSoFarDistanceToB2);
             Console.WriteLine("Optimal point: [" + x + "][" + y + "]");
-            Console.WriteLine("Distance of the best point from point [best point, F(best point)] on the ellipse: " + BestSoFarDistanceToPointOnEllipse2 + '\n' + "Distance of the best point to point B: " + BestSoFarDistanceToB2 + '\n' + "The difference of these distances: " + BestSoFarDifference2);
+            Console.WriteLine("Distance of the optimal point from point [optimal point, F(optimal point)] on the ellipse: " + BestSoFarDistanceToPointOnEllipse2 + '\n' + "Distance of the optimal point to point B: " + BestSoFarDistanceToB2 + '\n' + "The difference of these distances: " + BestSoFarDifference2);
             var result = HowManyDistancesMatch(bestPoint);
             Console.WriteLine("--The result of finding distance matches on the quarter circle from optimal point--");
             Console.WriteLine("Most frequant distance: " + result.mostFrequentDistance);
             Console.WriteLine("Frequancy: "+result.Frequency);
+            Console.WriteLine("Percentage of the total distances calculated: "+result.percentageOfTheTotalDistancesCalculated);
         }
-        (float mostFrequentDistance, int Frequency) HowManyDistancesMatch(Coordinates optimalPoint)
+        (float mostFrequentDistance, int Frequency, float percentageOfTheTotalDistancesCalculated) HowManyDistancesMatch(Coordinates optimalPoint)
         {
             Coordinates currentPoint = new Coordinates(B.x, B.y);
             Dictionary<float, int> distances = new Dictionary<float, int>();
@@ -104,7 +105,8 @@ namespace EllipseToCircle
                     mostFrequentDistance = item.Key;
                 }
             }
-            return (mostFrequentDistance, distances[mostFrequentDistance]);
+            Console.WriteLine("number - " + distances.Count);
+            return (mostFrequentDistance, distances[mostFrequentDistance], distances[mostFrequentDistance]/distances.Count);
         }
         Coordinates FindOptimalPoint()
         {
