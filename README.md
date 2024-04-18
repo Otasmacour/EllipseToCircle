@@ -19,7 +19,7 @@ I use this expression in the GetYCoordinateOnEllipse(float x) method. I ignore t
 After I get the optimal point, I check if the 2 given resulting, equal shapes really form a circle. If so, it must be true that the distance from the optimal point to any point on the quarter circle is always the same.
 ![distances](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/61ed4b42-8ec4-4fa4-8105-4cfaa6798d75)
 
-In a similar way to the FindOptimalPoint() method, I pass points from B to O, plug their x-coordinates into GetYCoordinateOnEllipse(float x) to get the corresponding point on the ellipse, and calculate the distance from O for that point.
+I pass points from B to O, plug their x-coordinates into GetYCoordinateOnEllipse(float x) to get the corresponding point on the ellipse, and calculate the distance from O for that point.
 I evaluate the resulting distances by seeing how many are equal to each other, the result is that very few are. The shapes I have obtained by cutting the ellipse are definitely not half circles.
 ![Desmos _ Graphing Calculator - Google Chrome 14 04 2024 15_35_33](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/a4a84d06-9dc8-42e6-9d95-56b89c5472a1)
 
