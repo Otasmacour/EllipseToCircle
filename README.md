@@ -6,7 +6,7 @@ if you divide the ellipse into 3 parts by two parallel lines, leaving two equal 
 # How I approached this problem
 
 ![edit1](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/6d724677-694f-41d5-ac65-68cde51d1d7e)
-![20240418_131533](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/4a84701e-641e-4dfc-8279-0820efaf2bad)
+
 
 For the optimal point, its distance perpendicular to the ellipse (point M) is equal to the distance to a.
 ![20240418_131533](https://github.com/Otasmacour/EllipseToCircle/assets/111227700/d473b5f0-7253-4e36-ad6c-7a7016577932)
